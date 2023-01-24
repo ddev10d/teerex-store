@@ -1,11 +1,12 @@
-import React from 'react'
+/* eslint-disable react/prop-types */
+import React from 'react';
 
-const CardImage = () => {
+const CardImage = ({ url }) => {
   return (
-    <div className='w-full h-3/5'>
-        <img className='w-full h-full object-cover' src='https://geektrust.s3.ap-southeast-1.amazonaws.com/coding-problems/shopping-cart/polo-tshirts.png' alt='product' />
+    <div className='w-full h-4/5'>
+      <img className='w-full h-full object-cover rounded-md' src={url} alt='product' />
     </div>
-  )
-}
+  );
+};
 
-export default CardImage
+export default CardImage;
