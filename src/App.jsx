@@ -10,6 +10,7 @@ function App() {
 
   const [productList, setProductList] = useState([]);
   console.log("heyy");
+
   useEffect(() => {
     const fetchProductList = async () => {
       const response = await fetch(import.meta.env.VITE_API_URL);
